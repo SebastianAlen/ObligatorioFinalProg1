@@ -51,7 +51,7 @@ public class MasterMain {
 		descifrador = transforma(ingreso);
 
 		for (int i = 0; i < 4; i++) {
-			if (encontre(codificador, descifrador[i])) {
+			if (codificador [i] == descifrador[i]) {
 				verde = verde + 1;
 				System.out.println("Verde: " + descifrador[i]);
 			} else {
@@ -59,8 +59,8 @@ public class MasterMain {
 				System.out.println("Rojo: " + descifrador[i]);
 			}
 		}
-		/* Comentario Prueba */
 		System.out.println("Numeros verdes total es: " + verde);
 		System.out.println("Numeros rojos total es: " + rojo);
+		System.out.println("Hola");
 	}
 }
